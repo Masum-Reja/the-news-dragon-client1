@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import ListGroup from "react-bootstrap/ListGroup";
 import QZone from "../QZone/QZone";
-import bg from './bg.css'
+import "./bg.css";
 
 const RightNav = () => {
   return (
@@ -30,6 +30,10 @@ const RightNav = () => {
         <h4 className="my-4">Find Us On</h4>
 
         <ListGroup>
+          <ListGroup.Item>
+            <FaFacebook className="text-info m-2"></FaFacebook> Facebook
+          </ListGroup.Item>
+
           <ListGroup.Item>
             <FaTwitter className="text-info m-2"></FaTwitter> Twitter
           </ListGroup.Item>
