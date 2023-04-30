@@ -4,13 +4,15 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+console.log("environment variable", import.meta.env.VITE_apiKey);
 const firebaseConfig = {
-  apiKey: "AIzaSyDdJE7T0eP5aoaWOiyNON0j3gh1rub2yS4",
-  authDomain: "the-news-dragon-f4d0c.firebaseapp.com",
-  projectId: "the-news-dragon-f4d0c",
-  storageBucket: "the-news-dragon-f4d0c.appspot.com",
-  messagingSenderId: "299502967671",
-  appId: "1:299502967671:web:db06662254faa77e0e5f72",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
@@ -18,23 +20,3 @@ const app = initializeApp(firebaseConfig);
 
 // export default app;
 export default app;
-
-// // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
-
-// // Your web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDdJE7T0eP5aoaWOiyNON0j3gh1rub2yS4",
-//   authDomain: "the-news-dragon-f4d0c.firebaseapp.com",
-//   projectId: "the-news-dragon-f4d0c",
-//   storageBucket: "the-news-dragon-f4d0c.appspot.com",
-//   messagingSenderId: "299502967671",
-//   appId: "1:299502967671:web:db06662254faa77e0e5f72"
-// };
-
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-
-// export default app;
